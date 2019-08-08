@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,81 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BaiHuay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54S-tG-oVw">
+                                <rect key="frame" x="20" y="64" width="374" height="346"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DI-2D-pJM">
+                                <rect key="frame" x="153.66666666666666" y="418" width="106.99999999999997" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="kJi-Ls-cwW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="36"/>
+                                <state key="normal" title="ใบ้หวย">
+                                    <color key="titleColor" red="0.18353873239436619" green="0.69016835387323938" blue="0.856871698943662" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="disabled" title="กดไม่ได้">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="aJR-rn-juw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRP-4u-zS8">
+                                <rect key="frame" x="20" y="832" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TAi-OV-gtY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="randomColor" destination="BYZ-38-t0r" eventType="touchUpInside" id="sX0-bF-73X"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="loy-fn-Tdt" customClass="ColorMe" customModule="BaiHuay" customModuleProvider="target">
+                                <rect key="frame" x="20" y="784" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9Ll-E8-8bS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YRP-4u-zS8" secondAttribute="trailing" constant="20" id="0sn-Ig-guo"/>
+                            <constraint firstItem="loy-fn-Tdt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3uR-jZ-W76"/>
+                            <constraint firstItem="0DI-2D-pJM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Auh-Wd-0jq"/>
+                            <constraint firstItem="YRP-4u-zS8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NeX-jY-NmQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="54S-tG-oVw" secondAttribute="trailing" constant="20" id="O73-C5-YDa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="loy-fn-Tdt" secondAttribute="trailing" constant="20" id="PPb-fp-BPf"/>
+                            <constraint firstItem="54S-tG-oVw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QNJ-pF-hxG"/>
+                            <constraint firstItem="54S-tG-oVw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="cEO-hi-vbd"/>
+                            <constraint firstItem="YRP-4u-zS8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dyM-yR-2jA"/>
+                            <constraint firstItem="0DI-2D-pJM" firstAttribute="top" secondItem="54S-tG-oVw" secondAttribute="bottom" constant="8" id="e1s-cU-EXp"/>
+                            <constraint firstItem="0DI-2D-pJM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rbg-1H-phB"/>
+                            <constraint firstItem="YRP-4u-zS8" firstAttribute="top" secondItem="loy-fn-Tdt" secondAttribute="bottom" constant="8" id="uue-by-e60"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="0DI-2D-pJM" id="2mx-lA-ngR"/>
+                        <outlet property="colorMe" destination="loy-fn-Tdt" id="jCj-HH-MH7"/>
+                        <outlet property="numberLabel" destination="54S-tG-oVw" id="nKG-Mf-cpE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-586" y="85"/>
         </scene>
     </scenes>
 </document>

@@ -14,6 +14,7 @@
 		BF3AD29122F96AFB003881FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3AD28F22F96AFB003881FB /* LaunchScreen.storyboard */; };
 		BF3AD29C22F96AFB003881FB /* BaiHuayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3AD29B22F96AFB003881FB /* BaiHuayTests.swift */; };
 		BF3AD2A722F96AFB003881FB /* BaiHuayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3AD2A622F96AFB003881FB /* BaiHuayUITests.swift */; };
+		BF3AD2B522FA8928003881FB /* ColorMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3AD2B422FA8928003881FB /* ColorMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		BF3AD2A222F96AFB003881FB /* BaiHuayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaiHuayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3AD2A622F96AFB003881FB /* BaiHuayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiHuayUITests.swift; sourceTree = "<group>"; };
 		BF3AD2A822F96AFB003881FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF3AD2B422FA8928003881FB /* ColorMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				BF3AD28D22F96AFB003881FB /* Assets.xcassets */,
 				BF3AD28F22F96AFB003881FB /* LaunchScreen.storyboard */,
 				BF3AD29222F96AFB003881FB /* Info.plist */,
+				BF3AD2B422FA8928003881FB /* ColorMe.swift */,
 			);
 			path = BaiHuay;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF3AD28922F96AFA003881FB /* ViewController.swift in Sources */,
+				BF3AD2B522FA8928003881FB /* ColorMe.swift in Sources */,
 				BF3AD28722F96AFA003881FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KWT52B2348;
 				INFOPLIST_FILE = BaiHuay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KWT52B2348;
 				INFOPLIST_FILE = BaiHuay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
